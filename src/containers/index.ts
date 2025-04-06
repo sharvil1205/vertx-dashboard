@@ -1,2 +1,3 @@
 import SidebarContainer from "./SidebarContainer";
-export { SidebarContainer };
+import { AnalyticsContainer } from "./analytics";
+export { SidebarContainer, AnalyticsContainer };
