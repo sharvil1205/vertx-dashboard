@@ -1,6 +1,13 @@
 import { SidebarContainer } from "./containers";
 import { Routes, Route, Navigate } from "react-router-dom";
-import { routes } from "./routes/RouteConfig";
+import { IRouteConfig, routes } from "./routes/RouteConfig";
+
+const renderRoutes = (routeArray: IRouteConfig[]) =>
+  routeArray.map(({ path, component: Component, children }) => (
+    <Route key={path} path={path} element={<Component />}>
+      {children && renderRoutes(children)}
+    </Route>
+  ));
 
 const App = () => {
   return (
@@ -8,11 +15,7 @@ const App = () => {
       <SidebarContainer />
       <div className="flex-grow">
         <Routes>
-          {routes.map(({ path, component: Component }) => (
-            <Route key={path} path={path} element={<Component />} />
-          ))}
-
-          {/* Default route redirect */}
+          {renderRoutes(routes)}
           <Route path="/" element={<Navigate to="/analytics" replace />} />
         </Routes>
       </div>

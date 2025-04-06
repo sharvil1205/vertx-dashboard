@@ -1,3 +1,10 @@
 import SidebarContainer from "./SidebarContainer";
 import { AnalyticsContainer } from "./analytics";
-export { SidebarContainer, AnalyticsContainer };
+import OverviewContainer from "./OverviewContainer";
+import DemographicsContainer from "./DemographicsContainer";
+export {
+  SidebarContainer,
+  AnalyticsContainer,
+  OverviewContainer,
+  DemographicsContainer,
+};

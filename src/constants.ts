@@ -1,4 +1,6 @@
-export const Messages = {};
+export const Messages = {
+  analytics: "Analytics",
+};
 
 export const sideBarItems = [
   "Dashboard",
@@ -8,3 +10,4 @@ export const sideBarItems = [
   "Profile",
   "Settings",
 ];
+export const tabs = ["Overview", "Demographics"];
