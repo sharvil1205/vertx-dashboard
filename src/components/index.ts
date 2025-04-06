@@ -1,3 +1,3 @@
 import Sidebar from "./Sidebar";
-
-export { Sidebar };
+import DemographicsLayout from "./DemographicsLayout";
+export { Sidebar, DemographicsLayout };

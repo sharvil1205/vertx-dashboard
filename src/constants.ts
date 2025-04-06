@@ -178,3 +178,30 @@ export const addOptions: MetricType[] = [
   "Interactions",
   "Impressions",
 ];
+
+export const countryStats = [
+  {
+    name: "India",
+    percent: 40,
+    color: "bg-violet-600",
+    flag: "https://flagcdn.com/in.svg",
+  },
+  {
+    name: "USA",
+    percent: 25,
+    color: "bg-orange-600",
+    flag: "https://flagcdn.com/us.svg",
+  },
+  {
+    name: "CANADA",
+    percent: 10,
+    color: "bg-yellow-400",
+    flag: "https://flagcdn.com/ca.svg",
+  },
+  {
+    name: "UAE",
+    percent: 7,
+    color: "bg-green-600",
+    flag: "https://flagcdn.com/ae.svg",
+  },
+];

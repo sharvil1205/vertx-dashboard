@@ -13,7 +13,7 @@ const Sidebar = ({ selectedItem, handleItemClick }: ISidebarProps) => {
         <div>icon</div>
         <Avatar shape="circular" className="bg-blue-500" initials={"SP"} />
       </section>
-      <section className="flex flex-col justify-center">
+      <section className="flex flex-col justify-center mb-auto">
         <h1 className="mb-4 text-xl font-semibold">Vertx Labs, Inc</h1>
         {sideBarItems.map((item: string) => (
           <div

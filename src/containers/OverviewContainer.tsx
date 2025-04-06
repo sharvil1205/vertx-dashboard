@@ -20,9 +20,24 @@ import {
   addOptions,
   availableMetrics,
   insightData,
+  countryStats,
 } from "../constants";
-import { Dropdown, Option, Link } from "@fluentui/react-components";
-import { ArrowRightRegular, ChevronDownRegular } from "@fluentui/react-icons";
+import {
+  Dropdown,
+  Option,
+  Link,
+  Card,
+  CardFooter,
+  CardHeader,
+  ProgressBar,
+  Button,
+} from "@fluentui/react-components";
+import {
+  ArrowRight24Regular,
+  ArrowRightRegular,
+  ChevronDownRegular,
+} from "@fluentui/react-icons";
+import { DemographicsLayout } from "../components";
 
 const OverviewContainer = () => {
   const [metricType, setMetricType] = useState<MetricType>("Visitors");
@@ -100,7 +115,7 @@ const OverviewContainer = () => {
   const metricStats = calculateTotalAndGrowth(displayData);
 
   return (
-    <div className="bg-black text-white p-6 rounded-lg">
+    <div className="bg-black text-white p-6 rounded-lg gap-6">
       <h2 className="text-2xl mb-4">Overview</h2>
 
       <div className="flex items-center mb-4 gap-4">
@@ -215,16 +230,14 @@ const OverviewContainer = () => {
           </div>
 
           <div className="text-right">
-            <Link
-              href="#"
-              className="!text-blue-400 flex items-center justify-end text-sm"
-            >
+            <Link href="#" className="flex items-center justify-end text-sm">
               View detailed insights
               <ArrowRightRegular className="w-4 h-4 ml-1" />
             </Link>
           </div>
         </div>
       </div>
+      <DemographicsLayout />
     </div>
   );
 };
