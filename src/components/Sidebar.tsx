@@ -19,7 +19,7 @@ const Sidebar = ({ selectedItem, handleItemClick }: ISidebarProps) => {
           <div
             key={item}
             className={`${
-              selectedItem !== item && "text-[#555555] cursor-pointer"
+              selectedItem !== item && "text-daveGray cursor-pointer"
             } my-4`}
             onClick={() => handleItemClick(item)}
           >
