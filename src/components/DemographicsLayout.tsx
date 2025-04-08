@@ -1,6 +1,6 @@
 import { Button, ProgressBar } from "@fluentui/react-components";
 import { ArrowRight24Regular } from "@fluentui/react-icons";
-import { countryStats } from "../constants";
+import { countryStats, Messages } from "../constants";
 
 const DemographicsLayout = () => {
   return (
@@ -41,11 +41,9 @@ const DemographicsLayout = () => {
           </div>
         ))}
 
-        <hr className="border-gray-700 my-4" />
-
         <div className="flex justify-end">
           <Button appearance="transparent" className="hover:underline">
-            View all countries
+            {Messages.viewAllCountries}
             <ArrowRight24Regular className="ml-1" />
           </Button>
         </div>
