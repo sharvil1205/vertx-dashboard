@@ -1,10 +1,10 @@
 import { Link } from "@fluentui/react-components";
 import { ArrowRightRegular } from "@fluentui/react-icons";
-import { insightData } from "../constants";
+import { insightData, Messages } from "../constants";
 
 const Insights = () => {
   return (
-    <div className="w-1/3 pl-4 border border-eerieBlack flex flex-col justify-between py-4 text-white h-full">
+    <div className="w-1/3 pl-4 border border-eerieBlack flex flex-col justify-between py-4 h-full">
       <div>
         <h3 className="text-2xl font-semibold mb-8">Insights</h3>
 
@@ -48,9 +48,9 @@ const Insights = () => {
       <div className="mt-auto pt-2 mr-3 text-right">
         <Link
           href="#"
-          className="flex items-center justify-end text-base hover:underline text-white"
+          className="flex items-center justify-end text-base hover:underline"
         >
-          View detailed insights
+          {Messages.viewDetailedInsights}
           <ArrowRightRegular className="ml-1" />
         </Link>
       </div>

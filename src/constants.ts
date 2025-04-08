@@ -2,6 +2,10 @@ import { DataSets, InsightData, MetricType, TimePeriods } from "./interfaces";
 
 export const Messages = {
   analytics: "Analytics",
+  viewAllCountries: "View all countries",
+  viewDetailedInsights: "View detailed insights",
+  overview: "Overview",
+  vertxLabs: "Vertx Labs, Inc",
 };
 
 export const sideBarItems = [
@@ -158,13 +162,11 @@ export const timePeriods: TimePeriods = {
   "Last 30 days": { days: 30 },
 };
 
-// Insight data
 export const insightData: InsightData = {
   founders: { value: "7.4K", growth: "+100%", growthValue: "(100)" },
   investors: { value: "6.09K", growth: "+100%", growthValue: "(100)" },
 };
 
-// Define the available metrics
 export const availableMetrics: MetricType[] = [
   "Visitors",
   "Connections",
@@ -172,7 +174,6 @@ export const availableMetrics: MetricType[] = [
   "Impressions",
 ];
 
-// Define the add options
 export const addOptions: MetricType[] = [
   "Connections",
   "Interactions",
