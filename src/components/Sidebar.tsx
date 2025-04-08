@@ -9,8 +9,8 @@ interface ISidebarProps {
 const Sidebar = ({ selectedItem, handleItemClick }: ISidebarProps) => {
   return (
     <div className="flex flex-row gap-8 w-1/5">
-      <section className="flex flex-col gap-y-6 shrink-0">
-        <div>icon</div>
+      <section className="flex flex-col gap-y-6 shrink-0 items-center">
+        <img src="/vertx-icon.png" alt="vertx" className="w-12 h-12" />
         <Avatar shape="circular" className="bg-blue-500" initials={"SP"} />
       </section>
       <section className="flex flex-col justify-center mb-auto">
