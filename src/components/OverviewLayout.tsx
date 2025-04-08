@@ -1,3 +1,4 @@
+import { Messages } from "../constants";
 import { DataPoint, MetricStats, MetricType, TimePeriods } from "../interfaces";
 import DemographicsLayout from "./DemographicsLayout";
 import Insights from "./Insights";
@@ -22,7 +23,7 @@ const OverviewLayout = ({
 }: IOverviewGraphProps) => {
   return (
     <div className="p-6 rounded-lg gap-6 border border-eerieBlack">
-      <h2 className="text-2xl mb-4">Overview</h2>
+      <h2 className="text-2xl mb-4">{Messages.overview}</h2>
 
       <div className="flex">
         <OverviewGraph

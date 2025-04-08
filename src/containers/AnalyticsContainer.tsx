@@ -1,7 +1,7 @@
 import { SelectTabData, Tab, TabList } from "@fluentui/react-components";
 import { useEffect, useState } from "react";
-import { Messages, tabs } from "../../constants";
 import { useNavigate, useLocation, Outlet } from "react-router-dom";
+import { Messages, tabs } from "../constants";
 
 const AnalyticsContainer = () => {
   const navigate = useNavigate();
@@ -26,8 +26,8 @@ const AnalyticsContainer = () => {
   };
 
   return (
-    <div>
-      <h1>{Messages.analytics}</h1>
+    <>
+      <div className="text-xl">{Messages.analytics}</div>
       <TabList
         selectedValue={selectedTab}
         onTabSelect={(e, data: SelectTabData) =>
@@ -39,7 +39,7 @@ const AnalyticsContainer = () => {
           <Tab
             key={tab}
             value={tab}
-            className={`cursor-pointer ${
+            className={`cursor-pointer text-lg ${
               tab !== selectedTab && "text-daveGray"
             }`}
           >
@@ -48,11 +48,10 @@ const AnalyticsContainer = () => {
         ))}
       </TabList>
 
-      {/* 👇 Render child route below the tabs */}
       <div className="mt-4">
         <Outlet />
       </div>
-    </div>
+    </>
   );
 };
 

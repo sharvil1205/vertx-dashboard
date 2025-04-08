@@ -1,5 +1,5 @@
 const DemographicsContainer = () => {
-  return <div>Demographics</div>;
+  return <></>;
 };
 
 export default DemographicsContainer;
